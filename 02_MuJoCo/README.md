@@ -67,6 +67,20 @@ __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia python 02_MuJoCo/G1
 - G1 的示例通过 `jnt_qposadr` 找到关节位置，直接修改 `qpos` 并调用 `mj_forward()`，属于运动学演示，不是 G1 的平衡或行走控制。
 - 在独立 Viewer 中使用 Control 滑块进行动力学测试时，未配平衡控制的 G1 可能倾斜或跌倒。
 
+
+## 学习进度更新
+
+2026年10月15日
+
+- 完成 SO-101 机械臂 MuJoCo 模型加载。
+- 实现 SO-101 肩部关节位置控制。
+- 完成宇树 G1 人形机器人模型加载。
+- 使用 Python 实现 G1 左肩关节周期性运动演示。
+- 使用 MuJoCo Viewer 的 Control 面板操作 G1。
+- 观察到 G1 在没有平衡控制器时会发生倾斜或摔倒。
+
+下一步：学习机器人位置控制、PD 控制以及正逆运动学。
+
 ## 后续
 
 补充运行截图、操作视频以及本机最终版代码；进一步学习 FK、IK、PD 控制与 G1 全身运动控制。
